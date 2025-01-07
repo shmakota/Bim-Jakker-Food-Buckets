@@ -1,12 +1,12 @@
 [
-  {
-    "type": "MOD_INFO",
-    "id": "bimjakker",
-    "name": "Bim Jakker Food Bucket Mod",
-    "authors": [ "WHALEY" ],
-    "maintainers": [ "WHALEY", "Kota" ],
-    "description": "Adds televangelist food buckets.",
-    "category": "items",
-    "dependencies": [ "bn" ]
-  }
+    {
+        "type": "MOD_INFO",
+        "id": "bimjakker",
+        "name": "Bim Jakker Food Buckets",
+        "authors": [ "WHALEY" ],
+        "maintainers": [ "WHALEY", "Kota" ],
+        "description": "Your favorite televangelist is here to sell you buckets! Be on the lookout for buckets inside of the homes of Bim Jakker viewers. Contained within the buckets is freeze dried 'food', religious literature, and in some cases a fold-able shovel! Be sure to use Bims signature recipes when cooking his food. Now featuring 4 varieties!",
+        "category": "items",
+        "dependencies": [ "bn" ]
+    }
 ]

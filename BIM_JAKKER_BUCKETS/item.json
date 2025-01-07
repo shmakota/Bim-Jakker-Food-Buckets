@@ -49,6 +49,38 @@
     "use_action": "DISASSEMBLE"
   },
   {
+    "id": "jakker_soup_bucket",
+    "type": "GENERIC",
+    "category": "other",
+    "looks_like": "r_paint",
+    "name": "bim jakker soup bucket",
+    "description": "A large vaccum sealed white bucket filled with freeze dried 'food' and religious literature.",
+    "weight": 1360,
+    "volume": 16,
+    "price": 10,
+    "price_postapoc": 100,
+    "material": "plastic",
+    "symbol": ")",
+    "color": "white",
+    "use_action": "DISASSEMBLE"
+  },
+  {
+    "id": "jakker_frettruchchini_bucket",
+    "type": "GENERIC",
+    "category": "other",
+    "looks_like": "g_paint",
+    "name": "bim jakker frettruchchini bucket",
+    "description": "A large vaccum sealed white bucket filled with freeze dried 'food' and religious literature.",
+    "weight": 1360,
+    "volume": 16,
+    "price": 10,
+    "price_postapoc": 100,
+    "material": "plastic",
+    "symbol": ")",
+    "color": "white",
+    "use_action": "DISASSEMBLE"
+  },
+  {
     "type": "COMESTIBLE",
     "id": "fd_corn",
     "name": { "str": "freeze dried corn", "str_pl": "freeze dried corn" },
@@ -131,6 +163,64 @@
     "fun": -15,
     "vitamins": [ [ "iron", 3 ] ]
   },
+    {
+        "type": "COMESTIBLE",
+        "id": "dehydrated_frettruchchini",
+        "name": {
+            "str": "dehydrated frettruchchini",
+            "str_pl": "dehydrated frettruchchini"
+        },
+        "looks_like": "can_chicken",
+        "weight": 153,
+        "color": "white",
+        "spoils_in": "0 days",
+        "comestible_type": "FOOD",
+        "symbol": "%",
+        "quench": -5,
+        "calories": 138,
+        "description": "Dehydrated frettruchchini noodles.  Completely unappetizing, but better when rehydrated.",
+        "price": 400,
+        "material": "wheat",
+        "volume": "250 ml",
+        "charges": 2,
+        "flags": [ "EATEN_HOT" ],
+        "fun": -10,
+        "vitamins": [
+            [
+                "calcium",
+                1
+            ],
+            [
+                "iron",
+                10
+            ],
+            [
+                "wheat_allergen",
+                1
+            ]
+        ]
+    },
+  {
+    "type": "COMESTIBLE",
+    "id": "dehydrated_soup",
+    "name": { "str": "dehydrated jakkers potato soup", "str_pl": "dehydrated jakkers potato soups" },
+    "looks_like": "soup_veggy",
+    "weight": 153,
+    "color": "brown",
+    "spoils_in": "0 days",
+    "comestible_type": "FOOD",
+    "symbol": "%",
+    "quench": -5,
+    "calories": 700,
+    "description": "Dehydrated potato soup.  Completely unappetizing, but better when rehydrated.",
+    "price": 400,
+    "material": "veggy",
+    "volume": "250 ml",
+    "charges": 2,
+    "flags": [ "EATEN_HOT" ],
+    "fun": -20,
+    "vitamins": [ [ "iron", 3 ], [ "vitA", 2 ], [ "vitC", 12 ] ]
+  },
   {
     "type": "COMESTIBLE",
     "id": "rehydrated_chicken",
@@ -164,6 +254,26 @@
   },
   {
     "type": "COMESTIBLE",
+    "id": "jakker_soup",
+    "name": { "str": "jakkers potato soup", "str_pl": "jakkers potato soups" },
+    "looks_like": "potato",
+    "weight": 153,
+    "color": "brown",
+    "spoils_in": "3 days",
+    "comestible_type": "FOOD",
+    "symbol": "%",
+    "calories": 700,
+    "description": "A lovely potato soup! One of Bim Jakkers signature recipes.",
+    "price": 400,
+    "material": "veggy",
+    "volume": "250 ml",
+    "charges": 2,
+    "flags": [ "EATEN_HOT" ],
+    "fun": -12,
+    "vitamins": [ [ "iron", 9 ], [ "calcium", 3 ], [ "vitC", 47 ] ]
+  },
+  {
+    "type": "COMESTIBLE",
     "id": "jakkers_fiesta",
     "name": { "str": "jakkers fiesta", "str_pl": "jakkers fiestas" },
     "looks_like": "nachosm",
@@ -182,6 +292,42 @@
     "fun": 2,
     "vitamins": [ [ "iron", 3 ], [ "vitA", 2 ], [ "vitC", 12 ] ]
   },
+    {
+        "type": "COMESTIBLE",
+        "id": "jakker_frettruchchini",
+        "name": {
+            "str": "jakkers frettruchchini",
+            "str_pl": "jakkers frettruchchinis"
+        },
+        "looks_like": "mre_mushroomfettuccine",
+        "weight": 153,
+        "color": "yellow",
+        "spoils_in": "3 days",
+        "comestible_type": "FOOD",
+        "symbol": "%",
+        "calories": 408,
+        "description": "Thats REAL frettruchchini noodles too! One of Bim Jakkers signature recipes.",
+        "price": 400,
+        "material": "flesh",
+        "volume": "250 ml",
+        "charges": 2,
+        "flags": [ "EATEN_HOT" ],
+        "fun": 2,
+        "vitamins": [
+            [
+                "calcium",
+                1
+            ],
+            [
+                "iron",
+                13
+            ],
+            [
+                "wheat_allergen",
+                1
+            ]
+        ]
+    },
   {
     "type": "COMESTIBLE",
     "id": "jakker_cakes",
@@ -227,6 +373,30 @@
       [ [ "raw_beans", 3 ] ],
       [ [ "dehydrated_chicken", 3 ] ],
       [ [ "e_tool", 1 ] ],
+      [ [ "jakker_bucket", 1 ] ]
+    ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "jakker_soup_bucket",
+    "type": "uncraft",
+    "time": "1 m",
+    "components": [
+        [ [ "holybook_bible1", 1 ] ],
+        [ [ "dehydrated_soup", 3 ] ],
+        [ [ "e_tool", 1 ] ],
+        [ [ "jakker_bucket", 1 ] ]
+    ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "jakker_frettruchchini_bucket",
+    "type": "uncraft",
+    "time": "1 m",
+    "components": [
+      [ [ "holybook_bible1", 1 ] ],
+      [ [ "dehydrated_frettruchchini", 3 ] ],
+      [ [ "dehydrated_chicken", 3 ] ],
       [ [ "jakker_bucket", 1 ] ]
     ],
     "flags": [ "BLIND_EASY" ]
