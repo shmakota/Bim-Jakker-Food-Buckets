@@ -33,21 +33,6 @@
     "use_action": "DISASSEMBLE"
   },
   {
-    "result": "jakker_fiesta_bucket",
-    "type": "uncraft",
-    "time": "0 m",
-    "components": [
-      [ [ "holybook_bible1", 1 ] ],
-      [ [ "fd_corn", 3 ] ],
-      [ [ "nachos", 3 ] ],
-      [ [ "raw_beans", 3 ] ],
-      [ [ "dehydrated_chicken", 3 ] ],
-      [ [ "e_tool", 1 ] ],
-      [ [ "jakker_bucket", 1 ] ]
-    ],
-    "flags": [ "BLIND_EASY" ]
-  },
-  {
     "id": "jakker_cake_bucket",
     "type": "GENERIC",
     "category": "other",
@@ -62,18 +47,6 @@
     "symbol": ")",
     "color": "white",
     "use_action": "DISASSEMBLE"
-  },
-  {
-    "result": "jakker_cake_bucket",
-    "type": "uncraft",
-    "time": "0 m",
-    "components": [
-      [ [ "holybook_bible1", 1 ] ],
-      [ [ "instant_pancakes", 5 ] ],
-      [ [ "dehydrated_syrup", 5 ] ],
-      [ [ "jakker_bucket", 1 ] ]
-    ],
-    "flags": [ "BLIND_EASY" ]
   },
   {
     "type": "COMESTIBLE",
@@ -135,8 +108,7 @@
     "volume": "250 ml",
     "charges": 16,
     "fun": 5,
-    "vitamins": [ [ "calcium", 2 ] ],
-    "freezing_point": -70
+    "vitamins": [ [ "calcium", 2 ] ]
   },
   {
     "type": "COMESTIBLE",
@@ -169,6 +141,26 @@
     "description": "Reconstituted chicken slices, which are much more enjoyable to eat now that they have been rehydrated.",
     "price": 500,
     "fun": -1
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "rehydrated_syrup",
+    "name": { "str": "rehydrated syrup", "str_pl": "rehydrated syrup" },
+    "looks_like": "syrup",
+    "weight": 21,
+    "color": "brown",
+    "comestible_type": "FOOD",
+    "symbol": "%",
+    "quench": 1,
+    "calories": 54,
+    "description": "Rehydrated syrup. Goes great on jakker cakes.",
+    "price": 600,
+    "material": "junk",
+    "volume": "250 ml",
+    "phase": "liquid",
+    "charges": 4,
+    "fun": 0,
+    "vitamins": [ [ "calcium", 2 ] ]
   },
   {
     "type": "COMESTIBLE",
@@ -213,25 +205,31 @@
     "vitamins": [ [ "vitA", 1 ], [ "calcium", 6 ], [ "iron", 4 ] ]
   },
   {
-    "type": "COMESTIBLE",
-    "id": "rehydrated_syrup",
-    "name": { "str": "rehydrated syrup", "str_pl": "rehydrated syrup" },
-    "looks_like": "syrup",
-    "weight": 21,
-    "color": "brown",
-    "comestible_type": "FOOD",
-    "symbol": "%",
-    "quench": 1,
-    "calories": 54,
-    "description": "Rehydrated syrup. Goes great on jakker cakes.",
-    "price": 600,
-    "material": "junk",
-    "volume": "250 ml",
-    "phase": "liquid",
-    "charges": 4,
-    "fun": 0,
-    "vitamins": [ [ "calcium", 2 ] ],
-    "freezing_point": -70
+    "result": "jakker_cake_bucket",
+    "type": "uncraft",
+    "time": "1 m",
+    "components": [
+      [ [ "holybook_bible1", 1 ] ],
+      [ [ "instant_pancakes", 5 ] ],
+      [ [ "dehydrated_syrup", 5 ] ],
+      [ [ "jakker_bucket", 1 ] ]
+    ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "jakker_fiesta_bucket",
+    "type": "uncraft",
+    "time": "1 m",
+    "components": [
+      [ [ "holybook_bible1", 1 ] ],
+      [ [ "fd_corn", 3 ] ],
+      [ [ "nachos", 3 ] ],
+      [ [ "raw_beans", 3 ] ],
+      [ [ "dehydrated_chicken", 3 ] ],
+      [ [ "e_tool", 1 ] ],
+      [ [ "jakker_bucket", 1 ] ]
+    ],
+    "flags": [ "BLIND_EASY" ]
   },
   {
     "type": "item_group",
